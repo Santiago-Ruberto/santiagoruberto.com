@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  background: #fff;
+  color-scheme: light;
+}
+
+body {
+  color: #000;
+  background: #fff;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 13.33px;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: currentColor;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:visited {
+  color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background: #000;
+    color-scheme: dark;
+  }
+
+  body {
+    color: #fff;
+    background: #000;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+main {
+  max-width: 555px;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+
+.thoughts-page {
+  max-width: 483px;
+}
+
+.thoughts-list {
+  margin-top: 24px;
+}
+
+.thought-entry {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.thought-entry > span:last-child {
+  text-decoration-color: currentColor;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.thought-marker {
+  background: #000;
+  flex: 0 0 auto;
+  height: 8px;
+  width: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .thought-marker {
+    background: #fff;
+  }
+}
+
+h1 {
+  font-size: 13.33px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.date {
+  line-height: 1.6;
+}
+
+article {
+  font-size: 13.33px;
+  line-height: 1.6;
+}
+
+article p {
+  margin: 0 0 21.33px;
+}
+
+article p:last-of-type {
+  margin-bottom: 32px;
+}
+
+footer .more-thoughts {
+  margin-top: 48px;
+  margin-bottom: 0;
+}
+
+footer {
+  margin-top: 64px;
+}
