@@ -52,14 +52,12 @@ export default function Home() {
   return (
     <>
       <main>
-        <h1>June 2024</h1>
-
         <article>
         {paragraphs.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
         ))}
 
-        <p>
+          <footer>
           <strong>
             <em>
               Howard Roark’s courtroom speech, Part IV, Chapter 18,{" "}
@@ -72,22 +70,6 @@ export default function Home() {
               </a>
             </em>
           </strong>
-          </p>
-
-          <footer>
-            I’m building{" "}
-            <a
-              href="https://apps.apple.com/us/app/melian/id6738385324"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Melian
-            </a>
-            , where we are working on creating a personal shopping experience.
-
-            <p className="more-thoughts">
-              More <a href="/thoughts">thoughts</a>
-            </p>
           </footer>
         </article>
       </main>
