@@ -64,6 +64,17 @@ main {
   list-style: none;
 }
 
+.thoughts-list > li {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.thoughts-list > li::before {
+  content: "-";
+  flex: 0 0 auto;
+}
+
 .thought-entry {
   display: block;
   line-height: 1.6;
