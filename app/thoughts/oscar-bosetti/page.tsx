@@ -208,7 +208,7 @@ export default function OscarBosettiPage() {
 
         <p>{"Naturalmente, no recuerdo cuando fue que nos conocimos."}<br />{"Lo que sí recuerdo muy bien es que, cuando lo conocí, no lo quería ni un poquito."}<br />{"No por él."}<br />{"Oscar no tenía nada que ver."}<br />{"Había dos razones."}</p>
 
-        <p>{"La primera era que todos mis amiguitos de la primaria tenían a sus padres juntos. Yo no. Me torturaban a preguntas sobre cómo era esa anomalía, qué se sentía, con quién pasaba la Navidad, si se llevaban bien, cómo había pasado. Y siempre alguna más. Todo sin filtro ni suavizante, con esa curiosidad de los chicos a la que ninguna respuesta le alcanza."}</p>
+        <p>{"La primera era que todos mis amiguitos de la primaria tenían a sus padres juntos. Yo no. Me torturaban a preguntas sobre cómo era esa anomalía, qué se sentía, con quién pasaba la Navidad, si se llevaban bien, cómo había pasado. Todo sin filtro ni suavizante, con esa curiosidad de los chicos a la que ninguna respuesta le alcanza."}</p>
 
         <p>{"Cada vez que lo veía a Oscar, me acordaba de todas esas preguntas incómodas. De que mi familia no era como la de mis amigos."}</p>
 
@@ -253,6 +253,23 @@ export default function OscarBosettiPage() {
         <p>{"Ese día a la mañana llovió, a la tarde salió el sol. Su Ferro que tanto quería ganó."}</p>
 
         <p>{"Te voy a extrañar, Oscar. Te quise mucho."}</p>
+
+        <div className="post-photo-pair">
+          <Image
+            src="/images/oscar-bosetti-family.jpg"
+            alt="Oscar Bosetti junto a su familia."
+            width={2648}
+            height={2359}
+            sizes="(max-width: 555px) calc((100vw - 64px) / 2), 246px"
+          />
+          <Image
+            src="/images/oscar-bosetti-restaurant.jpg"
+            alt="Oscar Bosetti compartiendo una mesa en un restaurante."
+            width={4320}
+            height={2432}
+            sizes="(max-width: 555px) calc((100vw - 64px) / 2), 246px"
+          />
+        </div>
 
         <hr className="post-tributes-divider" />
 
@@ -370,33 +387,35 @@ export default function OscarBosettiPage() {
 
         <p>{"La Universidad Nacional de Quilmes abraza a sus familiares, amigos, colegas y graduados en este doloroso momento. La memoria y el legado de Bosetti representan un orgullo invalorable para nuestra comunidad universitaria, jerarquizan la educación pública y nos consolidan como un faro permanente en el estudio de las "}<em>{"tramas"}</em>{" y narrativas sonoras."}</p>
 
-        <video
-          className="post-video"
-          controls
-          playsInline
-          preload="metadata"
-          poster="/images/oscar-bosetti-video.jpg"
-          width={608}
-          height={1080}
-          aria-label="Oscar Bosetti en el estudio de radio"
-        >
-          <source src="/videos/oscar-bosetti.mp4" type="video/mp4" />
-          <a href="/videos/oscar-bosetti.mp4">Descargar el video de Oscar Bosetti</a>
-        </video>
+        <div className="post-video-pair">
+          <video
+            className="post-video"
+            controls
+            playsInline
+            preload="metadata"
+            poster="/images/oscar-bosetti-video.jpg"
+            width={608}
+            height={1080}
+            aria-label="Oscar Bosetti en el estudio de radio"
+          >
+            <source src="/videos/oscar-bosetti.mp4" type="video/mp4" />
+            <a href="/videos/oscar-bosetti.mp4">Descargar el video de Oscar Bosetti</a>
+          </video>
 
-        <video
-          className="post-video"
-          controls
-          playsInline
-          preload="metadata"
-          poster="/images/oscar-bosetti-homenaje.jpg"
-          width={576}
-          height={1024}
-          aria-label="Homenaje a Oscar Bosetti"
-        >
-          <source src="/videos/oscar-bosetti-homenaje.mp4" type="video/mp4" />
-          <a href="/videos/oscar-bosetti-homenaje.mp4">Descargar el homenaje a Oscar Bosetti</a>
-        </video>
+          <video
+            className="post-video"
+            controls
+            playsInline
+            preload="metadata"
+            poster="/images/oscar-bosetti-homenaje.jpg"
+            width={576}
+            height={1024}
+            aria-label="Homenaje a Oscar Bosetti"
+          >
+            <source src="/videos/oscar-bosetti-homenaje.mp4" type="video/mp4" />
+            <a href="/videos/oscar-bosetti-homenaje.mp4">Descargar el homenaje a Oscar Bosetti</a>
+          </video>
+        </div>
       </article>
     </main>
   );
