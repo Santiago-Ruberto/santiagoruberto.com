@@ -131,7 +131,7 @@ actions tied to the current ChatGPT user. Leave public content anonymous.
 
 - `npm run dev`: start local development
 - `npm run build`: generate the Next.js production build and check TypeScript
-- `npm test`: build the website and verify preserved homepage content
+- `npm test`: build the website and verify the post index and preserved speech
 
 ## Learn More
 

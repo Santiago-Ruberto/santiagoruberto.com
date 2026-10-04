@@ -52,45 +52,22 @@ main {
   padding: 48px 24px 96px;
 }
 
-.home-nav {
-  margin-bottom: 32px;
-  line-height: 1.6;
-}
-
 .thoughts-page {
   max-width: 483px;
 }
 
+.thoughts-page h1 {
+  margin-bottom: 24px;
+}
+
 .thoughts-list {
-  margin-top: 24px;
+  list-style: none;
 }
 
 .thought-entry {
-  display: flex;
-  align-items: baseline;
-  gap: 7px;
+  display: block;
+  line-height: 1.6;
   margin-bottom: 8px;
-  text-decoration: none;
-}
-
-.thought-entry > span:last-child {
-  text-decoration-color: currentColor;
-  text-decoration-line: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-}
-
-.thought-marker {
-  background: #000;
-  flex: 0 0 auto;
-  height: 8px;
-  width: 8px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .thought-marker {
-    background: #fff;
-  }
 }
 
 h1 {
