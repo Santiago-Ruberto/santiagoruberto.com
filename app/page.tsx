@@ -52,6 +52,9 @@ export default function Home() {
   return (
     <>
       <main>
+        <nav className="home-nav" aria-label="Main navigation">
+          <a href="/thoughts">Thoughts</a>
+        </nav>
         <article>
         {paragraphs.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>

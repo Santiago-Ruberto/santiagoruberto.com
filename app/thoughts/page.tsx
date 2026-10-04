@@ -10,10 +10,6 @@ const thoughts = [
     title: "Oscar Bosetti",
     href: "/thoughts/oscar-bosetti",
   },
-  {
-    title: "product roadmap Q3 & Q4 2026",
-    href: "/thoughts/product-roadmap-q3-q4",
-  },
 ];
 
 export default function ThoughtsPage() {
