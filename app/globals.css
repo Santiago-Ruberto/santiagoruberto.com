@@ -160,12 +160,16 @@ footer {
   grid-template-columns: minmax(0, 1fr);
 }
 
-.post-photo-gallery a {
+.post-photo-trigger {
   display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
   cursor: zoom-in;
 }
 
-.post-photo-gallery a:focus-visible {
+.post-photo-trigger:focus-visible {
   outline: 1px solid currentColor;
   outline-offset: 4px;
 }
@@ -174,6 +178,43 @@ footer {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.post-photo-lightbox {
+  max-width: calc(100vw - 32px);
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 48px 16px 16px;
+  border: 0;
+  color: #fff;
+  background: #000;
+}
+
+.post-photo-lightbox::backdrop {
+  background: rgb(0 0 0 / 85%);
+}
+
+.post-photo-lightbox img {
+  width: auto;
+  height: auto;
+  max-width: calc(100vw - 64px);
+  max-height: calc(100dvh - 96px);
+}
+
+.post-photo-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  padding: 4px;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+body:has(.post-photo-lightbox[open]) {
+  overflow: hidden;
 }
 
 .post-video {
