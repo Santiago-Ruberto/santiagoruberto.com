@@ -52,6 +52,11 @@ main {
   padding: 48px 24px 96px;
 }
 
+.home-nav {
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
 .thoughts-page {
   max-width: 483px;
 }
