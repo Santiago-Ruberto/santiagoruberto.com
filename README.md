@@ -1,22 +1,62 @@
-# vinext-starter
+# santiagoruberto.com
 
-A clean full-stack starter running on
-[vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-Drizzle support.
+Personal website built with Next.js and React, published at
+[www.santiagoruberto.com](https://www.santiagoruberto.com).
 
 ## Prerequisites
 
-- Node.js `>=22.13.0`
+- Node.js 24, matching the Vercel project and GitHub Actions runtime.
 
 ## Quick Start
 
 ```bash
-npm install
+npm ci
 npm run dev
-npm run build
+npm test
 ```
 
-This starter does not use `wrangler.jsonc`.
+`npm test` runs the production build, TypeScript checks, and the existing page
+content test. Use `npm run dev -- --port 3002` if port 3000 is already occupied.
+
+## Automatic deployment
+
+The GitHub repository `Santiago-Ruberto/santiagoruberto.com` is connected to the
+existing Vercel project **Melian / santiagoruberto**.
+
+- **Production branch:** `main`. The older `master` branch is not used to
+  publish the current site.
+- **Production domain:** `https://www.santiagoruberto.com`.
+- **Framework and runtime:** Next.js, Node.js 24.
+- **Build command:** `npm run build` (Next.js framework default).
+- **Domain assignment:** automatic for successful production deployments.
+
+Every push or merged pull request to `main` triggers Vercel's Git integration.
+Vercel builds that commit and assigns the existing production domains when the
+deployment is ready. Other branches create preview deployments for review.
+See the [Vercel GitHub integration documentation](https://vercel.com/docs/git/vercel-for-github).
+
+The `Verify website` GitHub Actions workflow runs `npm ci` and `npm test` for
+pull requests targeting `main` and pushes to `main`. CI and the Vercel build run
+independently; this workflow does not deploy the site or require Vercel secrets.
+
+For an approved publication, push the reviewed changes to `main` or merge the
+reviewed PR into `main`. A separate manual Vercel deploy is not needed. Verify
+the automatic deployment is Ready, matches the published commit, and serves the
+updated page on the production domain before reporting completion.
+
+The production branch is configured in **Project Settings → Environments →
+Production → Branch Tracking**, with **Auto-assign Custom Production Domains**
+enabled. The connected repository is configured in **Project Settings → Git**.
+
+Do not commit `.vercel/`, login tokens, or environment secrets. If deployment
+authorization fails, resolve the reported GitHub/Vercel account permission;
+do not change projects, domains, or deployment protection as a workaround.
+
+## Optional starter integrations
+
+The following files and helpers were inherited from the original starter.
+Production uses the Next.js commands above and Vercel's Git integration.
+This project does not use `wrangler.jsonc`.
 
 ## Included Shape
 
@@ -90,9 +130,8 @@ actions tied to the current ChatGPT user. Leave public content anonymous.
 ## Useful Commands
 
 - `npm run dev`: start local development
-- `npm run build`: verify the vinext build output
-- `npm test`: build the starter and verify its rendered loading skeleton
-- `npm run db:generate`: generate Drizzle migrations after schema changes
+- `npm run build`: generate the Next.js production build and check TypeScript
+- `npm test`: build the website and verify preserved homepage content
 
 ## Learn More
 
