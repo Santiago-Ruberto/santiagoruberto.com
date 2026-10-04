@@ -11,9 +11,8 @@ test("keeps the preserved page content in the local project", async () => {
 
   assert.match(page, /Thousands of years ago, the first man discovered how to make fire/);
   assert.match(page, /Howard Roark’s courtroom speech, Part IV, Chapter 18/);
-  assert.match(page, /I’m building/);
   assert.match(page, /The_Fountainhead/);
-  assert.match(page, /apps\.apple\.com\/us\/app\/melian\/id6738385324/);
+  assert.doesNotMatch(page, /I’m building|apps\.apple\.com\/us\/app\/melian\/id6738385324/);
   assert.match(layout, /title: "Santiago Ruberto"/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.doesNotMatch(page, /codex-preview|Your site is taking shape|SkeletonPreview/);

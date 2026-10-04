@@ -115,3 +115,71 @@ article p:last-of-type {
 footer {
   margin-top: 64px;
 }
+
+.post-page h1 {
+  margin-bottom: 24px;
+}
+
+.post-date {
+  font-size: 13.33px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin: 48px 0 24px;
+}
+
+.post-image + .post-date {
+  margin-top: 0;
+}
+
+.post-page .post-tribute-title {
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
+  margin: 0 0 24px;
+}
+
+.post-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+}
+
+.post-video {
+  display: block;
+  width: min(100%, 260px);
+  height: auto;
+  margin: 32px auto 0;
+  background: #000;
+}
+
+.post-page blockquote {
+  border-left: 1px solid currentColor;
+  padding-left: 16px;
+  margin-bottom: 21.33px;
+}
+
+.post-page blockquote p:last-of-type {
+  margin-bottom: 0;
+}
+
+.post-poem cite {
+  display: block;
+  margin-top: 16px;
+}
+
+.post-page hr {
+  border: 0;
+  border-top: 1px solid currentColor;
+  margin: 32px 0;
+}
+
+.post-page .post-tributes-divider {
+  width: 72px;
+  opacity: 0.35;
+  margin: 64px 0 32px;
+}
+
+.post-page .post-tributes-intro {
+  margin-bottom: 40px;
+}
