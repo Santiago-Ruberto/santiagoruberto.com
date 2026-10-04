@@ -145,19 +145,32 @@ footer {
   margin-bottom: 32px;
 }
 
-.post-photo-pair,
+.post-photo-gallery,
 .post-video-pair {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
   margin: 32px 0;
 }
 
-.post-photo-pair {
-  align-items: center;
+.post-video-pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.post-photo-pair img {
+.post-photo-gallery {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.post-photo-gallery a {
+  display: block;
+  cursor: zoom-in;
+}
+
+.post-photo-gallery a:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 4px;
+}
+
+.post-photo-gallery img {
   display: block;
   width: 100%;
   height: auto;

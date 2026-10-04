@@ -254,21 +254,35 @@ export default function OscarBosettiPage() {
 
         <p>{"Te voy a extrañar, Oscar. Te quise mucho."}</p>
 
-        <div className="post-photo-pair">
-          <Image
-            src="/images/oscar-bosetti-family.jpg"
-            alt="Oscar Bosetti junto a su familia."
-            width={2648}
-            height={2359}
-            sizes="(max-width: 555px) calc((100vw - 64px) / 2), 246px"
-          />
-          <Image
-            src="/images/oscar-bosetti-restaurant.jpg"
-            alt="Oscar Bosetti compartiendo una mesa en un restaurante."
-            width={4320}
-            height={2432}
-            sizes="(max-width: 555px) calc((100vw - 64px) / 2), 246px"
-          />
+        <div className="post-photo-gallery">
+          <a
+            href="/images/oscar-bosetti-family.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir la foto familiar en tamaño completo, en una nueva pestaña"
+          >
+            <Image
+              src="/images/oscar-bosetti-family.jpg"
+              alt="Oscar Bosetti junto a su familia."
+              width={2648}
+              height={2359}
+              unoptimized
+            />
+          </a>
+          <a
+            href="/images/oscar-bosetti-restaurant.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir la foto del restaurante en tamaño completo, en una nueva pestaña"
+          >
+            <Image
+              src="/images/oscar-bosetti-restaurant.jpg"
+              alt="Oscar Bosetti compartiendo una mesa en un restaurante."
+              width={4320}
+              height={2432}
+              unoptimized
+            />
+          </a>
         </div>
 
         <hr className="post-tributes-divider" />
