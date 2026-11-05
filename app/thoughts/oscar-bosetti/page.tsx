@@ -415,6 +415,39 @@ export default function OscarBosettiPage() {
             <a href="/videos/oscar-bosetti-homenaje.mp4">Descargar el homenaje a Oscar Bosetti</a>
           </video>
         </div>
+
+        <div className="post-photo-gallery">
+          <PostPhoto
+            src="/images/oscar-bosetti-parte-del-aire-corazon.jpg"
+            alt="Ilustración de Oscar Bosetti dentro de un corazón rojo, rodeado de referencias a la radio y el texto «Parte del aire»."
+            width={981}
+            height={821}
+          />
+          <PostPhoto
+            src="/images/oscar-bosetti-mientras-haya-palabra.jpg"
+            alt="Ilustración de Oscar Bosetti frente a un micrófono: «Mientras haya palabra, la radio va a seguir existiendo»."
+            width={1067}
+            height={746}
+          />
+          <PostPhoto
+            src="/images/oscar-bosetti-ferro-radio.jpg"
+            alt="Ilustración de Oscar Bosetti con la camiseta de Ferro y una radio al hombro."
+            width={571}
+            height={1018}
+          />
+          <PostPhoto
+            src="/images/oscar-bosetti-parte-del-aire-uner.jpg"
+            alt="Ilustración de Oscar Bosetti volando junto a una antena de Radio UNER 100.3 y el texto «Oscar, parte del aire…»."
+            width={1280}
+            height={626}
+          />
+          <PostPhoto
+            src="/images/oscar-bosetti-sabina.jpg"
+            alt="Ilustración de Oscar Bosetti señalando un retrato de Joaquín Sabina."
+            width={699}
+            height={737}
+          />
+        </div>
       </article>
     </main>
   );
